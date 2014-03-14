@@ -1,0 +1,24 @@
+@import "compass";
+@import "partials/normalize";
+@import "partials/variable";
+@import "partials/helper";
+@import "partials/patterns";
+@import "partials/base";
+@import "partials/type";
+@import "partials/fonticon";
+@import "partials/layout";
+@import "partials/sidebar";
+
+
+@import "extensions/header";
+@import "extensions/home";
+
+
+@import "partials/media";
+@import "partials/footer";
+
+
+
+body {
+    background-color: red;
+}

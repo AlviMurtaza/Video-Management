@@ -1,0 +1,66 @@
+@import url(http://fonts.googleapis.com/css?family=Gafata);
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700);
+
+html {
+    font-size: 100%;
+//    font-family: 'Gafata', sans-serif;
+//    font-family: 'Poiret One', cursive;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body.front.not-logged-in {
+    background: url("../images/bg.jpg")no-repeat fixed;
+    background-size: cover;
+    background-position: 10% 20%;
+}
+
+body {
+    background: url("http://www.gyancentral.com/images/IIFT.jpg")no-repeat fixed;
+    background-size: cover;
+    background-position: 10% 20%;
+}
+
+#main {
+    width: 945px;
+    margin: auto;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    padding: 0 10px;
+}
+
+.panels-ipe-portlet-wrapper.panels-ipe-portlet-marker {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+}
+
+
+//#page {
+//    background: url("http://www.riawebdesign.com/wp-content/uploads/2013/12/business-man-and-woman1.png") fixed;
+//    background-size: inherit;
+//}
+
+
+div.region.region-two-66-33-first {
+    width: 572px;
+    float: left;
+}
+
+
+div.region.region-two-66-33-second {
+    float: right;
+    width: 370px;
+}
+
+#panels-ipe-paneid-14, #panels-ipe-paneid-16, #panels-ipe-paneid-17, #navigation, #skip-link, #secondary-menu {
+    display: none;
+}

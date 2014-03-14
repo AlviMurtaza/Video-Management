@@ -1,0 +1,60 @@
+@media screen and (max-width: 1024px) {
+// ===========================
+		// Home Links
+// ===========================
+	.home-links {
+		height: 25.8em;
+
+		h1 {
+			height: 10em;
+
+			p {
+				font-size: 14px;
+			}
+		}
+	}
+
+
+// ===========================
+		// Navigation
+// ===========================
+	nav[role="navigation"] {
+
+		li {
+			padding: 0;
+		}
+
+	}
+// ===========================
+		// Side Links
+// ===========================
+	#block-block-6 {
+		margin-left: 8%;
+	}
+
+// ===========================
+		// Vision & Mission
+// ===========================
+	.pane-block-4 {
+			padding-bottom : 4em;
+	}
+
+}
+
+
+
+@media screen and (max-width: 1280px) {
+
+	.home-links {
+
+		h1 {
+
+			p {
+
+				font-size: 17px;
+				}
+
+			}
+
+		}
+}

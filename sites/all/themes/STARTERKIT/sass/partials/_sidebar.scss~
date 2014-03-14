@@ -1,0 +1,130 @@
+.region.region-content-aside {
+	//background: #f0f0f0;
+	// background: url("../images/cream_pixels.png");
+	float: left;
+	width: 25%;
+}
+
+
+/*===================*/
+	/*Logo Block*/
+/*===================*/
+#block-block-5 {
+	line-height	: 0.5;
+	text-align: center;
+	// .side-logo {
+	//  img {
+	// 	height: 100px;
+	// }
+// }
+	h2 {
+		// font-family: 'Didact Gothic';
+		font-size: 2em;
+		text-shadow: 0px 1px 0px #FFF;
+		font-weight: normal;
+		color: #22A6DD;
+		margin-bottom: 9px;
+	}
+
+	h3 {
+		color: #22a6dd;
+		font-size: 15px;
+		font-weight: normal;
+	}
+
+// 	.slogan {
+// 		font-family: 'Didact Gothic', sans-serif;
+// 		margin-left: -1em;
+// 		width: 100%;
+// 		position: relative;
+// 		z-index: 5;
+// 		background: rgba(0, 0, 0, 0.67);
+// 		border-radius: 3px;
+// 		padding: 5px;
+// 		color: white;
+// 		font-size: 18px;
+// }
+
+}
+
+/*========================*/
+	/*Social*/
+/*s========================*/
+	#block-block-8 {
+		position: absolute;
+		right:0;
+
+	.social {
+
+	img{
+		height: 38px;
+		}
+
+	 li {
+		list-style: none;
+		padding-bottom: 1px;
+		}
+	}
+}
+
+
+/*====================*/
+	/*Sidebar Links*/
+/*====================*/
+#block-block-6 {
+	margin-top: 30px;
+	margin-left: 20%;
+
+	.side-links img {
+		background: #22a6dd;
+		padding: 5px 12px;
+		border-radius: 5px 0 0 5px;
+		margin-right: 10px;
+		}
+
+	.side-links {
+		margin: 10px 0px;
+		background: rgba(34, 166, 221, 0.67);
+		width: 11em;
+		font-size: 19px;
+		border-radius: 5px;
+
+
+	a {
+		color: #000;
+		text-decoration: none;
+		vertical-align: 7px;
+		font-size: 0.9em;
+		//text-shadow: 0 1px 0 rgba(255, 255, 255, 0.69);
+		}
+	}
+
+}
+
+
+/*======================*/
+	/*Map iframe*/
+/*======================*/
+
+#block-block-7 {
+	text-align: center;
+	margin-top: 21px;
+
+	p {
+	color: #22A6DD;
+	letter-spacing: 0.5px;
+	font-size: 16px;
+	font-weight: normal;
+	text-shadow: 0 1px 0px #FFF;
+
+	}
+	iframe {
+		border: 5px solid #4AB5E2;
+		//border-radius: 5px;
+		box-shadow: 1px 2px 1px #B3B3B3;
+		margin-bottom: 10px;
+
+	}
+}
+
+

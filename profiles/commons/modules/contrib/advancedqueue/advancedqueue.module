@@ -1,0 +1,115 @@
+<?php
+
+/**
+ * @file
+ * Helper module for advanced queuing.
+ */
+
+/**
+ * Status indicating item was added to the queue.
+ */
+define('ADVANCEDQUEUE_STATUS_QUEUED', -1);
+
+/**
+ * Status indicating item is currently being processed.
+ */
+define('ADVANCEDQUEUE_STATUS_PROCESSING', 0);
+
+/**
+ * Status indicating item was processed successfuly.
+ */
+define('ADVANCEDQUEUE_STATUS_SUCCESS', 1);
+
+/**
+ * Status indicating item processing failed.
+ */
+define('ADVANCEDQUEUE_STATUS_FAILURE', 2);
+
+/**
+ * Implements hook_views_api().
+ */
+function advancedqueue_views_api() {
+  return array(
+    'api' => 2,
+    'path' => drupal_get_path('module', 'advancedqueue') . '/views',
+  );
+}
+
+/**
+ * Implements hook_advancedqueue_entity_info().
+ */
+function advancedqueue_entity_info() {
+  $entity_info['advancedqueue_item'] = array(
+    'label' => t('Advanced queue item'),
+    'controller class' => 'DrupalDefaultEntityController',
+    'base table' => 'advancedqueue',
+    'module' => 'advancedqueue',
+    'entity keys' => array(
+      'id' => 'item_id',
+    ),
+  );
+  return $entity_info;
+}
+
+/**
+ * Implements hook_menu().
+ */
+function advancedqueue_menu() {
+    $items = array();
+  
+    $items['admin/config/system/advancedqueue'] = array(
+        'title' => 'Advanced Queue configuration',
+        'description' => 'Configuration for the Advanced Queue module.',
+        'page callback' => 'drupal_get_form',
+        'page arguments' => array('advancedqueue_settings'),
+        'access arguments' => array('administer site configuration'),
+        'type' => MENU_NORMAL_ITEM,
+      );
+  
+    return $items;
+}
+
+/**
+ * Form builder; Advanced Queue form.
+ *
+ * @see system_settings_form()
+ */
+function advancedqueue_settings() {
+  $form['description'] = array(
+    '#markup' => '<p>' . t('Advanced Queue replaces the standard Queue and enhances it.') . '</p>',
+  );
+
+  $form['advancedqueue'] = array(
+    '#type' => 'fieldset',
+  );
+  $form['advancedqueue']['advancedqueue_threshold'] = array(
+    '#type' => 'select',
+    '#title' => t('Number of successfully completed jobs to keep in the database.'),
+    '#default_value' => variable_get('advancedqueue_threshold', 0),
+    '#options' => array(0 => t('All'), 100, 1000, 10000, 100000, 1000000),
+  );
+  return system_settings_form($form);
+}
+
+/**
+ * Implements hook_cron().
+ */
+function advancedqueue_cron() {
+  // Cleanup the advancedqueue table
+  $row_limit = variable_get('advancedqueue_threshold', 0);
+  if ($row_limit > 0) {
+    $min_row = db_select('advancedqueue', 'a')
+      ->fields('a', array('item_id'))
+      ->condition('status', ADVANCEDQUEUE_STATUS_SUCCESS)
+      ->orderBy('item_id', 'DESC')
+      ->range($row_limit - 1, 1)
+      ->execute()->fetchField();
+    // Delete all table entries after the nth row, if nth row was found.
+    if ($min_row) {
+      db_delete('advancedqueue')
+        ->condition('item_id', $min_row, '<')
+        ->condition('status', ADVANCEDQUEUE_STATUS_SUCCESS)
+        ->execute();
+    }
+  }
+}

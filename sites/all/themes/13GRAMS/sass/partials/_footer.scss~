@@ -1,0 +1,44 @@
+
+#footer {
+
+	background: #4AB5E2; /*#ffcc4f;*/
+	color: #000;
+
+	#block-block-12 {
+
+		float: left;
+		margin-left: 4em;
+
+	img {
+		width: 61%;
+	}
+
+	.social {
+		li {
+		display: inline-block;
+		padding-right: 7px;
+			a {
+				font-size: 2em;
+				color: #000;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+// ===========================
+		// Copyright
+// ===========================
+	#block-block-11 {
+		padding-top: 7px;
+		float: right;
+		margin-right: 4em;
+		// color: #755307;
+	}
+
+}
+
+
+.gmnoprint {
+display: none !important;
+}
