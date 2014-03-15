@@ -2,6 +2,11 @@
 @import url(http://fonts.googleapis.com/css?family=Poiret+One);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700);
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     font-size: 100%;
 //    font-family: 'Gafata', sans-serif;
@@ -16,13 +21,14 @@ body.front.not-logged-in {
 }
 
 body {
-    background: url("http://www.gyancentral.com/images/IIFT.jpg")no-repeat fixed;
-    background-size: cover;
-    background-position: 10% 20%;
+    background: #e1e3e4;
+   // background: url("http://www.gyancentral.com/images/IIFT.jpg")no-repeat fixed;
+   // background-size: cover;
+   // background-position: 10% 20%;
 }
 
 #main {
-    width: 945px;
+    width: 1224px;
     margin: auto;
 }
 
@@ -37,10 +43,42 @@ li {
     padding: 0 10px;
 }
 
-.panels-ipe-portlet-wrapper.panels-ipe-portlet-marker {
-    background: #fff;
+
+#content {
+    background: rgba(255, 255, 255, 0.3);
     padding: 20px;
+
+    #page-title {
+      font-weight: 400;
+      margin: 0;
+      padding: 10px 0;
+      text-transform: uppercase;
+    }
+
+    nav {
+        ol {
+            margin: 0;
+            padding: 10px;
+        }
+    }
+}
+//.panels-ipe-portlet-wrapper.panels-ipe-portlet-marker {
+  //  background: #fff;
+   // padding: 20px;
+   // margin: 10px;
+//}
+#content > div > div.region.region-two-66-33-first > div > div > div > div > div.views-row {
+    width: 150px;
+    float: left;
+    background: #53C2AC;
     margin: 10px;
+    text-align: center;
+    padding-top: 8%;
+    height: 95px;
+}
+
+#content > div > div.region.region-two-66-33-first > div > div > div > div > div.views-row a {
+    font-size: 1.2em;
 }
 
 
@@ -51,14 +89,19 @@ li {
 
 
 div.region.region-two-66-33-first {
-    width: 572px;
+    width: 690px;
     float: left;
+   // background: rgba(255, 255, 255, 0.81);
+   // padding: 20px 40px;
 }
-
+div.region-two-66-33-first, div.region-two-66-33-second {
+    background: rgba(255, 255, 255, 0.81);
+    padding: 20px 40px;
+}
 
 div.region.region-two-66-33-second {
     float: right;
-    width: 370px;
+    width: 316px;
 }
 
 #panels-ipe-paneid-14, #panels-ipe-paneid-16, #panels-ipe-paneid-17, #navigation, #skip-link, #secondary-menu {

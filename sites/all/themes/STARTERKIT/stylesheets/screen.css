@@ -2730,64 +2730,101 @@ a .icon-flip-vertical:before {
 }
 
 /* line 5, ../sass/partials/_layout.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 10, ../sass/partials/_layout.scss */
 html {
   font-size: 100%;
   font-family: 'Open Sans', sans-serif;
 }
 
-/* line 12, ../sass/partials/_layout.scss */
+/* line 17, ../sass/partials/_layout.scss */
 body.front.not-logged-in {
   background: url("../images/bg.jpg") no-repeat fixed;
   background-size: cover;
   background-position: 10% 20%;
 }
 
-/* line 18, ../sass/partials/_layout.scss */
+/* line 23, ../sass/partials/_layout.scss */
 body {
-  background: url("http://www.gyancentral.com/images/IIFT.jpg") no-repeat fixed;
-  background-size: cover;
-  background-position: 10% 20%;
+  background: #e1e3e4;
 }
 
-/* line 24, ../sass/partials/_layout.scss */
+/* line 30, ../sass/partials/_layout.scss */
 #main {
-  width: 945px;
+  width: 1224px;
   margin: auto;
 }
 
-/* line 29, ../sass/partials/_layout.scss */
+/* line 35, ../sass/partials/_layout.scss */
 a {
   color: #000;
   text-decoration: none;
 }
 
-/* line 34, ../sass/partials/_layout.scss */
+/* line 40, ../sass/partials/_layout.scss */
 li {
   list-style: none;
   display: inline;
   padding: 0 10px;
 }
 
-/* line 40, ../sass/partials/_layout.scss */
-.panels-ipe-portlet-wrapper.panels-ipe-portlet-marker {
-  background: #fff;
+/* line 47, ../sass/partials/_layout.scss */
+#content {
+  background: rgba(255, 255, 255, 0.3);
   padding: 20px;
-  margin: 10px;
+}
+/* line 51, ../sass/partials/_layout.scss */
+#content #page-title {
+  font-weight: 400;
+  margin: 0;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+/* line 59, ../sass/partials/_layout.scss */
+#content nav ol {
+  margin: 0;
+  padding: 10px;
 }
 
-/* line 53, ../sass/partials/_layout.scss */
+/* line 70, ../sass/partials/_layout.scss */
+#content > div > div.region.region-two-66-33-first > div > div > div > div > div.views-row {
+  width: 150px;
+  float: left;
+  background: #53C2AC;
+  margin: 10px;
+  text-align: center;
+  padding-top: 8%;
+  height: 95px;
+}
+
+/* line 80, ../sass/partials/_layout.scss */
+#content > div > div.region.region-two-66-33-first > div > div > div > div > div.views-row a {
+  font-size: 1.2em;
+}
+
+/* line 91, ../sass/partials/_layout.scss */
 div.region.region-two-66-33-first {
-  width: 572px;
+  width: 690px;
   float: left;
 }
 
-/* line 59, ../sass/partials/_layout.scss */
-div.region.region-two-66-33-second {
-  float: right;
-  width: 370px;
+/* line 97, ../sass/partials/_layout.scss */
+div.region-two-66-33-first, div.region-two-66-33-second {
+  background: rgba(255, 255, 255, 0.81);
+  padding: 20px 40px;
 }
 
-/* line 64, ../sass/partials/_layout.scss */
+/* line 102, ../sass/partials/_layout.scss */
+div.region.region-two-66-33-second {
+  float: right;
+  width: 316px;
+}
+
+/* line 107, ../sass/partials/_layout.scss */
 #panels-ipe-paneid-14, #panels-ipe-paneid-16, #panels-ipe-paneid-17, #navigation, #skip-link, #secondary-menu {
   display: none;
 }
@@ -2806,7 +2843,7 @@ div.region.region-two-66-33-second {
 #block-commons-utility-links-commons-utility-links ul {
   position: absolute;
   padding: 10px 0;
-  top: -17px;
+  top: 0;
   left: 0;
   text-align: right;
   background: rgba(0, 0, 0, 0.71);
@@ -2819,111 +2856,92 @@ div.region.region-two-66-33-second {
 }
 /* line 24, ../sass/extensions/_header.scss */
 #block-commons-utility-links-commons-utility-links ul li.last {
-  padding-right: 15%;
+  padding-right: 13.4%;
 }
 
 /* line 32, ../sass/extensions/_header.scss */
 #header {
+  width: 1026px;
   height: 70px;
+  max-height: auto;
   margin-top: 41px;
   background-color: #fff;
   padding: 3px 12%;
 }
-/* line 38, ../sass/extensions/_header.scss */
+/* line 40, ../sass/extensions/_header.scss */
 #header a {
   color: #08c;
   font-weight: 700;
   text-decoration: none;
 }
-/* line 44, ../sass/extensions/_header.scss */
+/* line 46, ../sass/extensions/_header.scss */
 #header #name-and-slogan {
   display: inline-flex;
   float: left;
 }
-/* line 48, ../sass/extensions/_header.scss */
+/* line 50, ../sass/extensions/_header.scss */
 #header #name-and-slogan #site-name {
   display: inline-block;
   margin: 5px 0;
 }
-/* line 52, ../sass/extensions/_header.scss */
+/* line 54, ../sass/extensions/_header.scss */
 #header #name-and-slogan #site-name a span {
   color: #000;
   font-weight: 100;
 }
 
-/* line 61, ../sass/extensions/_header.scss */
+/* line 63, ../sass/extensions/_header.scss */
 #block-commons-utility-links-commons-utility-links {
   display: inline-block;
 }
 
-/* line 65, ../sass/extensions/_header.scss */
+/* line 67, ../sass/extensions/_header.scss */
 #block-commons-utility-links-commons-utility-links > ul > li {
   display: inline;
   padding: 0 16px;
 }
 
-/* line 70, ../sass/extensions/_header.scss */
+/* line 72, ../sass/extensions/_header.scss */
 #block-system-main-menu {
   float: left;
   display: inline-block;
   padding: 18px;
+  margin-left: 65px;
 }
 
-/* line 78, ../sass/extensions/_header.scss */
+/* line 81, ../sass/extensions/_header.scss */
 #block-system-main-menu ul {
   margin: 0;
 }
 
-/* line 89, ../sass/extensions/_header.scss */
+/* line 92, ../sass/extensions/_header.scss */
 #block-search-form {
+  float: right;
   display: inline-block;
   padding: 1em;
 }
 
-/* line 99, ../sass/extensions/_header.scss */
+/* line 103, ../sass/extensions/_header.scss */
 #search-block-form div div div.form-item.form-type-textfield.form-item-search-block-form {
   position: relative;
 }
-/* line 103, ../sass/extensions/_header.scss */
+/* line 107, ../sass/extensions/_header.scss */
 #search-block-form div div div.form-item.form-type-select.form-item-custom-search-types {
   position: absolute;
   z-index: 9;
 }
 
-/* line 112, ../sass/extensions/_header.scss */
+/* line 116, ../sass/extensions/_header.scss */
 #search-block-form > div > div {
   position: relative;
 }
 
-/* line 116, ../sass/extensions/_header.scss */
-#edit-custom-search-types {
-  border-radius: 10px 0 0 10px;
-}
-
-/* line 120, ../sass/extensions/_header.scss */
+/* line 124, ../sass/extensions/_header.scss */
 #edit-search-block-form--2 {
-  width: 165px;
-  border-radius: 10px;
+  width: 273px;
   border: 1px solid gray;
-  padding: 0 108px;
+  padding-left: 108px;
   height: 24px;
   color: gray;
   font-weight: 100;
-}
-
-/* line 130, ../sass/extensions/_header.scss */
-#edit-actions {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-/* line 136, ../sass/extensions/_header.scss */
-#edit-submit, #edit-submit--2 {
-  position: absolute;
-  z-index: 10;
-  right: 0;
-  top: 0;
-  border-radius: 0 10px 10px 0;
-  border: 1px solid gray;
 }
