@@ -1,6 +1,41 @@
+#rate-node-1-1-1 {
+    float: left;
+}
+
+.rate-commons-like-count {
+    display: inline;
+}
+
+#commons-bw-partial-node-form-post {
+    div {
+        div.user-picture {
+            float: left;
+            margin: 0 13px;
+        }
+    }
+}
+
 .quicktabs-style-commons-pills ul.quicktabs-tabs {
     padding: 30px 0;
     background: #F1F1F1;
     border-bottom: 1px solid #CFCFCF;
     text-align: center;
+}
+
+.form-textarea-wrapper {
+    textarea {
+        width: 88%;
+    }
+}
+
+#content {
+    div.user-picture {
+        a {
+            img {
+                height: 50px;
+                float: left;
+                margin: 0 15px;
+            }
+        }
+    }
 }

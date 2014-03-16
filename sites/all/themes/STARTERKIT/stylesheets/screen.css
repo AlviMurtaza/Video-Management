@@ -2839,11 +2839,39 @@ div.region.region-two-66-33-second {
 }
 
 /* line 1, ../sass/partials/_group.scss */
+#rate-node-1-1-1 {
+  float: left;
+}
+
+/* line 5, ../sass/partials/_group.scss */
+.rate-commons-like-count {
+  display: inline;
+}
+
+/* line 11, ../sass/partials/_group.scss */
+#commons-bw-partial-node-form-post div div.user-picture {
+  float: left;
+  margin: 0 13px;
+}
+
+/* line 18, ../sass/partials/_group.scss */
 .quicktabs-style-commons-pills ul.quicktabs-tabs {
   padding: 30px 0;
   background: #F1F1F1;
   border-bottom: 1px solid #CFCFCF;
   text-align: center;
+}
+
+/* line 26, ../sass/partials/_group.scss */
+.form-textarea-wrapper textarea {
+  width: 88%;
+}
+
+/* line 34, ../sass/partials/_group.scss */
+#content div.user-picture a img {
+  height: 50px;
+  float: left;
+  margin: 0 15px;
 }
 
 /* line 2, ../sass/extensions/_header.scss */
