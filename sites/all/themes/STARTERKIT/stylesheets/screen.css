@@ -5,8 +5,7 @@
 /**
  * Correct `block` display not defined in IE 8/9.
  */
-@import url(http://fonts.googleapis.com/css?family=Gafata);
-@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700);
 /* line 22, ../sass/partials/_normalize.scss */
 article,
@@ -2741,56 +2740,56 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* line 17, ../sass/partials/_layout.scss */
+/* line 15, ../sass/partials/_layout.scss */
 body.front.not-logged-in {
   background: url("../images/bg.jpg") no-repeat fixed;
   background-size: cover;
   background-position: 10% 20%;
 }
 
-/* line 23, ../sass/partials/_layout.scss */
+/* line 21, ../sass/partials/_layout.scss */
 body {
   background: #e1e3e4;
 }
 
-/* line 30, ../sass/partials/_layout.scss */
+/* line 28, ../sass/partials/_layout.scss */
 #main {
   width: 1224px;
   margin: auto;
 }
 
-/* line 35, ../sass/partials/_layout.scss */
+/* line 33, ../sass/partials/_layout.scss */
 a {
   color: #000;
   text-decoration: none;
 }
 
-/* line 40, ../sass/partials/_layout.scss */
+/* line 38, ../sass/partials/_layout.scss */
 li {
   list-style: none;
   display: inline;
   padding: 0 10px;
 }
 
-/* line 47, ../sass/partials/_layout.scss */
+/* line 45, ../sass/partials/_layout.scss */
 #content {
   background: rgba(255, 255, 255, 0.3);
   padding: 20px;
 }
-/* line 51, ../sass/partials/_layout.scss */
+/* line 49, ../sass/partials/_layout.scss */
 #content #page-title {
   font-weight: 400;
   margin: 0;
   padding: 10px 0;
   text-transform: uppercase;
 }
-/* line 59, ../sass/partials/_layout.scss */
+/* line 57, ../sass/partials/_layout.scss */
 #content nav ol {
   margin: 0;
   padding: 10px;
 }
 
-/* line 70, ../sass/partials/_layout.scss */
+/* line 68, ../sass/partials/_layout.scss */
 #content > div > div.region.region-two-66-33-first > div > div > div > div > div.views-row {
   width: 150px;
   float: left;
@@ -2801,30 +2800,30 @@ li {
   height: 95px;
 }
 
-/* line 80, ../sass/partials/_layout.scss */
+/* line 78, ../sass/partials/_layout.scss */
 #content > div > div.region.region-two-66-33-first > div > div > div > div > div.views-row a {
   font-size: 1.2em;
 }
 
-/* line 91, ../sass/partials/_layout.scss */
+/* line 89, ../sass/partials/_layout.scss */
 div.region.region-two-66-33-first {
   width: 690px;
   float: left;
 }
 
-/* line 97, ../sass/partials/_layout.scss */
+/* line 95, ../sass/partials/_layout.scss */
 div.region-two-66-33-first, div.region-two-66-33-second {
   background: rgba(255, 255, 255, 0.81);
   padding: 20px 40px;
 }
 
-/* line 102, ../sass/partials/_layout.scss */
+/* line 100, ../sass/partials/_layout.scss */
 div.region.region-two-66-33-second {
   float: right;
   width: 316px;
 }
 
-/* line 107, ../sass/partials/_layout.scss */
+/* line 105, ../sass/partials/_layout.scss */
 #panels-ipe-paneid-14, #panels-ipe-paneid-16, #panels-ipe-paneid-17, #navigation, #skip-link, #secondary-menu {
   display: none;
 }
@@ -2944,4 +2943,37 @@ div.region.region-two-66-33-second {
   height: 24px;
   color: gray;
   font-weight: 100;
+}
+
+/* line 1, ../sass/partials/_footer.scss */
+#footer {
+  margin-top: 30px;
+  background: #333;
+  font-size: 12px;
+  color: #aaa599;
+  font-family: ubuntu;
+}
+/* line 8, ../sass/partials/_footer.scss */
+#footer a {
+  color: #8EABC1;
+}
+/* line 12, ../sass/partials/_footer.scss */
+#footer #block-block-2 {
+  width: 1184px;
+  margin: auto;
+  padding: 75px 0;
+  text-align: center;
+}
+/* line 19, ../sass/partials/_footer.scss */
+#footer #block-block-1, #footer #block-block-3 {
+  padding: 40px 6%;
+  background: #232323;
+}
+/* line 27, ../sass/partials/_footer.scss */
+#footer #block-block-1 {
+  text-align: right;
+}
+/* line 31, ../sass/partials/_footer.scss */
+#footer #block-block-3 {
+  float: left;
 }
