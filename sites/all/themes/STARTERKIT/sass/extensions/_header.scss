@@ -30,9 +30,8 @@
 
 //HEADER
 #header {
-    width: 1026px;
+    min-width: 1026px;
     height: 70px;
-    max-height: auto;
     margin-top: 41px;
     background-color: #fff;
     padding: 3px 12%;
@@ -92,7 +91,7 @@
 #block-search-form {
     float: right;
     display: inline-block;
-    padding: 1em;
+    padding: 1em 0;
 }
 
 #search-block-form {
