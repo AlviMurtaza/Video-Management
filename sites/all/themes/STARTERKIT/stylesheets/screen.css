@@ -2791,16 +2791,17 @@ li {
 
 /* line 68, ../sass/partials/_layout.scss */
 #content > div > div.region.region-two-66-33-first > div > div > div > div > div.views-row {
-  width: 132px;
+  width: 150px;
   float: left;
   background: #53C2AC;
-  margin: 10px;
+  margin: 5px;
   text-align: center;
-  line-height: 132px;
-  height: 132px;
+  padding: 6px;
+  line-height: 150px;
+  height: 150px;
 }
 
-/* line 78, ../sass/partials/_layout.scss */
+/* line 79, ../sass/partials/_layout.scss */
 #content > div > div.region.region-two-66-33-first > div > div > div > div > div.views-row a {
   font-size: 1.2em;
   display: inline-block;
@@ -2808,25 +2809,25 @@ li {
   line-height: normal;
 }
 
-/* line 92, ../sass/partials/_layout.scss */
+/* line 93, ../sass/partials/_layout.scss */
 div.region.region-two-66-33-first {
   width: 690px;
   float: left;
 }
 
-/* line 98, ../sass/partials/_layout.scss */
+/* line 99, ../sass/partials/_layout.scss */
 div.region-two-66-33-first, div.region-two-66-33-second {
   background: rgba(255, 255, 255, 0.81);
   padding: 20px 40px;
 }
 
-/* line 103, ../sass/partials/_layout.scss */
+/* line 104, ../sass/partials/_layout.scss */
 div.region.region-two-66-33-second {
   float: right;
   width: 316px;
 }
 
-/* line 108, ../sass/partials/_layout.scss */
+/* line 109, ../sass/partials/_layout.scss */
 #panels-ipe-paneid-14, #panels-ipe-paneid-16, #panels-ipe-paneid-17, #navigation, #skip-link, #secondary-menu {
   display: none;
 }
