@@ -2838,6 +2838,14 @@ div.region.region-two-66-33-second {
   display: none;
 }
 
+/* line 1, ../sass/partials/_group.scss */
+.quicktabs-style-commons-pills ul.quicktabs-tabs {
+  padding: 30px 0;
+  background: #F1F1F1;
+  border-bottom: 1px solid #CFCFCF;
+  text-align: center;
+}
+
 /* line 2, ../sass/extensions/_header.scss */
 #logo > img {
   float: left;
