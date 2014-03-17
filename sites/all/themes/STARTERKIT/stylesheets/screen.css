@@ -2792,17 +2792,25 @@ li {
 
 /* line 69, ../sass/partials/_layout.scss */
 #content > div > div.region.region-two-66-33-first > div > div > div > div > div.views-row {
-  width: 150px;
+  width: 146px;
   float: left;
   background: #53C2AC;
+  border: 1px solid #cfcfcf;
   margin: 5px;
+  box-shadow: 0 0 3px;
   text-align: center;
   padding: 6px;
-  line-height: 150px;
-  height: 150px;
+  line-height: 146px;
+  height: 146px;
 }
 
-/* line 80, ../sass/partials/_layout.scss */
+/* line 82, ../sass/partials/_layout.scss */
+#content > div > div.region.region-two-66-33-first > div > div > div > div > div.views-row.views-row-even {
+  background: rgba(207, 207, 207, 0.49);
+  box-shadow: 0 0 3px red;
+}
+
+/* line 87, ../sass/partials/_layout.scss */
 #content > div > div.region.region-two-66-33-first > div > div > div > div > div.views-row a {
   font-size: 1.2em;
   display: inline-block;
@@ -2810,30 +2818,30 @@ li {
   line-height: normal;
 }
 
-/* line 87, ../sass/partials/_layout.scss */
+/* line 94, ../sass/partials/_layout.scss */
 #content > div > div.region.region-two-66-33-second > div > div.panel-pane.pane-views.pane-4th-sem-syllabus-books > div > div > div.views-row {
   padding: 7px 0;
 }
 
-/* line 98, ../sass/partials/_layout.scss */
+/* line 105, ../sass/partials/_layout.scss */
 div.region.region-two-66-33-first {
   width: 690px;
   float: left;
 }
 
-/* line 104, ../sass/partials/_layout.scss */
+/* line 111, ../sass/partials/_layout.scss */
 div.region-two-66-33-first, div.region-two-66-33-second {
   background: rgba(255, 255, 255, 0.81);
   padding: 20px 40px;
 }
 
-/* line 109, ../sass/partials/_layout.scss */
+/* line 116, ../sass/partials/_layout.scss */
 div.region.region-two-66-33-second {
   float: right;
   width: 316px;
 }
 
-/* line 114, ../sass/partials/_layout.scss */
+/* line 121, ../sass/partials/_layout.scss */
 #panels-ipe-paneid-14, #panels-ipe-paneid-16, #panels-ipe-paneid-17, #navigation, #skip-link, #secondary-menu {
   display: none;
 }
@@ -2872,6 +2880,26 @@ div.region.region-two-66-33-second {
   height: 50px;
   float: left;
   margin: 0 15px;
+}
+
+/* line 44, ../sass/partials/_group.scss */
+#comments article {
+  border: 1px solid #cfcfcf;
+  padding: 20px 0;
+}
+/* line 48, ../sass/partials/_group.scss */
+#comments article .comment-reply {
+  float: right;
+}
+/* line 50, ../sass/partials/_group.scss */
+#comments article .comment-reply a {
+  color: #f00;
+}
+/* line 57, ../sass/partials/_group.scss */
+#comments article header p span.user-picture img {
+  height: 50px;
+  margin: 0 15px;
+  float: left;
 }
 
 /* line 2, ../sass/extensions/_header.scss */

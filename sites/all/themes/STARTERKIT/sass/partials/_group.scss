@@ -39,3 +39,28 @@
         }
     }
 }
+
+#comments {
+    article {
+        border: 1px solid #cfcfcf;
+        padding: 20px 0;
+
+        .comment-reply {
+            float: right;
+            a {
+                color: #f00;
+            }
+        }
+        header {
+            p {
+                span.user-picture {
+                    img {
+                        height: 50px;
+                        margin: 0 15px;
+                        float: left;
+                    }
+                }
+            }
+        }
+    }
+}
