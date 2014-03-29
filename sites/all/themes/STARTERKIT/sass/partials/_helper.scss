@@ -1,1 +1,9 @@
+%group:before,
+%group:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
 
+%group:after {
+    clear: both;
+}

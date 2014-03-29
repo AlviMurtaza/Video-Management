@@ -1,0 +1,16 @@
+.tabs-primary {
+    @extend %hor-list;
+
+    a {
+        padding: .5rem .75rem;
+        display: block;
+        background: #C5C5C5;
+        text-decoration: none;
+
+        &.is-active,
+        &:hover {
+            background: #6F6F6F;
+            color: #FFF;
+        }
+    }
+}

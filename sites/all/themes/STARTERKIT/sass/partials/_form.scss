@@ -1,0 +1,20 @@
+%vertical-form {
+    .form-item {
+        margin-bottom: 1rem;
+
+        input {
+            max-width: 400px;
+            padding: .5rem;
+        }
+
+        .grippe {
+            max-width: 400px;
+        }
+    }
+
+    label {
+        display: block;
+        margin-bottom: .25rem;
+    }
+
+}

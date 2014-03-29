@@ -1,0 +1,13 @@
+%bare-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+%hor-list {
+    @extend %bare-list;
+    @extend %group;
+
+    li {
+        float: left;
+    }
+}

@@ -1,0 +1,59 @@
+%font-icon {
+    font-size: 0;
+    text-decoration: none;
+    margin-right: 1rem;
+    display: block;
+
+    &:before {
+        font-size: 1.5rem;
+        font-family: fontawesome;
+    }
+}
+
+%user-profile {
+    .region-two-33-66-first {
+        @extend %one-third;
+        float: left;
+    }
+
+    .region-two-33-66-second {
+        @extend %two-third;
+        float: right;
+        padding-left: 2em;
+    }
+
+
+
+    .pane-user-picture {
+    }
+
+    .pane-user-field-facebook-url,
+    .pane-user-field-twitter-url,
+    .pane-user-field-linkedin-url {
+        display: inline-block;
+
+        a {
+            @extend %font-icon;
+        }
+    }
+
+    .facebook-url {
+        @extend .fa-facebook;
+    }
+
+    .twitter-url {
+        @extend .fa-twitter;
+    }
+
+    .linkedin-url {
+        @extend .fa-linkedin;
+    }
+
+    form {
+        @extend %vertical-form;
+    }
+}
+
+.page-user {
+    @extend %user-profile;
+}
